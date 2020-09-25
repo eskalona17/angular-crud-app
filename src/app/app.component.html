@@ -36,6 +36,13 @@
             />
           </div>
           <button (click)="addOrEdit()" class="btn btn-primary">Submit</button>
+          <button
+            *ngIf="EmpleadoSeleccionado.id !== 0"
+            class="btn btn-danger"
+            (click)="delete()"
+          >
+            Borrar
+          </button>
         </div>
       </div>
     </div>
